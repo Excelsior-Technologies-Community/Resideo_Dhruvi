@@ -1,10 +1,22 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import '../Style.css';
 
 const Home = () => {
     const [data, setData] = useState([]);
     const [start, setStart] = useState(0);
+    const navigate = useNavigate();
+
+    const handleSearchSubmit = () => {
+        const token = localStorage.getItem("token");
+        if (!token) {
+            alert("First need to login");
+            navigate("/login");
+        } else {
+            alert("Searching properties...");
+        }
+    };
 
     const fetchData = async () => {
         const res = await fetch(`http://localhost:5000/api/neighborhoods?start=${start}`);
@@ -72,7 +84,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-md-3 text-md-end">
-                            <button className="search-btn">
+                            <button className="search-btn" onClick={handleSearchSubmit}>
                                 SEARCH PROPERTIES
                             </button>
                         </div>

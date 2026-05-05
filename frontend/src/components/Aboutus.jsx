@@ -21,6 +21,7 @@ function About() {
   useEffect(() => {
     fetchServices();
   }, []);
+  
   return (
     <>
       <div className="about-hero">
@@ -119,8 +120,6 @@ function About() {
           </div>
         </div>
       </div>
-
-
     </>
   );
 }
