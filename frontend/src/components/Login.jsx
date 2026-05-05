@@ -44,7 +44,7 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label className="form-label">Email</label>
-            <input type="email" name="email" className="form-control" onChange={handleChange} required />
+            <input type="email" name="email" className="form-control" placeholder="Enter your email" onChange={handleChange} required />
           </div>
           <div className="mb-3">
             <label className="form-label">Password</label>
@@ -53,6 +53,7 @@ const Login = () => {
                 type={showPassword ? "text" : "password"} 
                 name="password" 
                 className="form-control" 
+                placeholder="Enter your password"
                 onChange={handleChange} 
                 required 
               />

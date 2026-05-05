@@ -652,3 +652,16 @@ body {
     height: 250px;
   }
 }
+
+h2 {
+  line-height: 1.4;
+}
+
+i {
+  min-width: 40px;
+}
+
+.contact-input::placeholder {
+  color: #999 !important;
+  opacity: 1 !important;
+}
