@@ -46,25 +46,7 @@ export default function Agents() {
 
             <div className="agents-page">
 
-                <div className="text-center py-4 bg-light">
-                    <h2>Our Agents</h2>
-                    <p className="text-muted">
-                        Pairing the industry's top technology with unsurpassed local expertise.
-                    </p>
-                </div>
-
-                <div className="agent-hero">
-                    <div className="search-box container">
-                        <h3>Find an Agent</h3>
-
-                        <div className="input-group mt-3">
-                            <input className="form-control" placeholder="Search for..." />
-                            <span className="input-group-text">
-                                <i className="fa fa-search"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+               
 
                 <div className="container agents-grid">
                     <div className="row">
