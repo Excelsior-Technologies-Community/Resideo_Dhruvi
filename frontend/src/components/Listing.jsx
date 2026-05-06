@@ -10,6 +10,12 @@ export default function Listings() {
       .catch(err => console.log(err));
   }, []);
 
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/properties")
+      .then(res => setProperties(res.data))
+      .catch(err => console.log(err));
+  }, []);
+
   return (
     <div className="container mt-4">
       <h2 className="mb-4">Property Search</h2>
