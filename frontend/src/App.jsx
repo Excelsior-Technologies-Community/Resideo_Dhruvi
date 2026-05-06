@@ -8,7 +8,7 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Services from "./components/Services";
 import Listings from "./components/Listing";
-
+import Agents from "./components/Agents";
 function App() {
   return (
     <Router>
@@ -20,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/services" element={<Services />} />
         <Route path="/listings" element={<Listings />} />
+        <Route path="/agents" element={<Agents />} />
 
       </Routes>
       <Footer />

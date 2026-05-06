@@ -11,7 +11,6 @@ export default function Listings() {
   }, []);
 
   
-
   return (
     <div className="container mt-4">
       <h2 className="mb-4">Property Search</h2>

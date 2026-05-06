@@ -59,7 +59,11 @@ const Navbar = () => {
                                 AGENTS
                             </a>
                             <ul className="dropdown-menu agents-menu" aria-labelledby="agentsDropdown">
-                                <li><a className="dropdown-item" href="#">Agents List</a></li>
+                                <li>
+  <Link className="dropdown-item" to="/agents">
+    Agents List
+  </Link>
+</li>
                                 <li><a className="dropdown-item" href="#">Melvin Blackwell</a></li>
                                 <li><a className="dropdown-item" href="#">Alayna Becker</a></li>
                                 <li><a className="dropdown-item" href="#">Scott Goodwin</a></li>
