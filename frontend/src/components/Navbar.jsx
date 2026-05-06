@@ -44,13 +44,27 @@ const Navbar = () => {
                         <li className="nav-item"><Link className="nav-link" to="/about">
                             ABOUT US
                         </Link></li>
-                       <li className="nav-item">
-              <Link className="nav-link" to="/services">
-                SERVICES
-              </Link>
-            </li>
-                        <li className="nav-item"><a className="nav-link" href="#">LISTINGS</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">AGENTS</a></li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/services">
+                                SERVICES
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/listings">
+                                LISTINGS
+                            </Link>
+                        </li>
+                        <li className="nav-item dropdown hover-dropdown">
+                            <a className="nav-link" href="#" id="agentsDropdown" role="button">
+                                AGENTS
+                            </a>
+                            <ul className="dropdown-menu agents-menu" aria-labelledby="agentsDropdown">
+                                <li><a className="dropdown-item" href="#">Agents List</a></li>
+                                <li><a className="dropdown-item" href="#">Melvin Blackwell</a></li>
+                                <li><a className="dropdown-item" href="#">Alayna Becker</a></li>
+                                <li><a className="dropdown-item" href="#">Scott Goodwin</a></li>
+                            </ul>
+                        </li>
                         <li className="nav-item"><a className="nav-link" href="#">BLOG</a></li>
                         <li className="nav-item"><a className="nav-link" href="#">DEMOS</a></li>
                         <li className="nav-item"><a className="nav-link" href="#">CONTACT US</a></li>

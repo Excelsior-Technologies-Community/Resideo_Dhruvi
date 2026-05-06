@@ -664,4 +664,69 @@ i {
 .contact-input::placeholder {
   color: #999 !important;
   opacity: 1 !important;
-}
+}
+
+
+.property-card {
+  border: none;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.featured {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.filter-box {
+  border-right: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .filter-box {
+    margin-bottom: 20px;
+    border-right: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hover-dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.agents-menu {
+  background-color: #000;
+  border: none;
+  border-radius: 0;
+  padding: 10px 0;
+}
+
+.agents-menu .dropdown-item {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.agents-menu .dropdown-item:hover {
+  background-color: transparent;
+  color: #ccc;
+}

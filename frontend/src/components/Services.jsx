@@ -37,6 +37,7 @@ const Services = () => {
             .then(res => setFeatures(res.data))
             .catch(err => console.log(err));
     }, []);
+    
     return (
         <>
             <section className="services-section container py-5">
