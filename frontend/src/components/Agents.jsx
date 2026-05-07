@@ -46,8 +46,6 @@ export default function Agents() {
 
             <div className="agents-page">
 
-               
-
                 <div className="container agents-grid">
                     <div className="row">
                         {agents.map((agent) => (
