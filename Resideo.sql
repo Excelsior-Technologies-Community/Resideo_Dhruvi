@@ -81,3 +81,35 @@ INSERT INTO agents (name, phone, image) VALUES
 ('Alayna Becker', '(123) 456-7890', 'user2.png'),
 ('Scott Goodwin', '(123) 456-7890', 'user3.png'),
 ('Erika Tillman', '(123) 456-7890', 'user1.png');
+
+CREATE TABLE agent_properties (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255),
+    price VARCHAR(100),
+    details VARCHAR(255),
+    image VARCHAR(255)
+);
+
+INSERT INTO agent_properties (title, price, details, image) VALUES
+
+('Fabulous Little Apartment', '$2,475 /mo', '2 BD | 1 BA | 975 SF', 'img1.png'),
+
+('Awesome Interior Apartment', '$1,240,000', '4 BD | 2 BA | 2600 SF', 'img2.png'),
+
+('Elegant Apartment', '$2,650 /mo', '1 BD | 1 BA | 675 SF', 'img3.png'),
+
+('Modern Apartment in Mission District', '$1,495,000', '5 BD | 4 BA | 2268 SF', 'img4.png');
+
+CREATE TABLE articles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category VARCHAR(100),
+    title VARCHAR(255),
+    description TEXT,
+    image VARCHAR(255),
+    featured BOOLEAN DEFAULT false
+);
+
+INSERT INTO articles (category, title, description, image, featured) VALUES
+('LIVING ROOM', 'How Does A Designer Home Look Like', 'Have realistic expectations Most designers will tell you that, as much as we all love to watch home design shows, their prevalence has done them a bit of a disservice....', 'house1.jpeg', true),
+('ARCHITECTURE', 'The Secrets of Modern Architecture', 'Learn about the principles that define modern architecture and how they influence the spaces we live and work in today...', 'house2.jpeg', false),
+('INTERIOR DESIGN', 'Tips for a Minimalist Home', 'Minimalism is more than just a design trend. It is a lifestyle choice that can lead to a more peaceful and organized environment...', 'house3.jpeg', false);

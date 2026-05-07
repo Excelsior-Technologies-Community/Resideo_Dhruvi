@@ -3,5 +3,6 @@ const router = express.Router();
 const controller = require("../controllers/agentController");
 
 router.get("/", controller.getAgents);
+router.get("/properties", controller.getAgentProperties);
 
 module.exports = router;

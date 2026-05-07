@@ -1,0 +1,94 @@
+.blog-carousel-container {
+    position: relative;
+    margin: 0 auto 60px auto; /* Center horizontally and leave space for the overlapping card */
+    max-width: 1000px; /* Optional: constrain width for better appearance */
+  }
+  
+  .blog-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .featured-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  
+  .blog-content-card {
+    position: absolute;
+    bottom: -60px; /* Overlaps bottom */
+    right: 5%; /* Overlaps right, with some margin */
+    width: 45%; /* Card width */
+    max-width: 500px;
+    z-index: 10;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05); /* Subtle shadow */
+    transition: all 0.3s ease;
+  }
+  
+  .read-article-link {
+    color: #4285F4; /* A nice blue color as in screenshot */
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+  }
+  
+  .read-article-link:hover {
+    color: #0b5ed7;
+  }
+  
+  .read-article-line {
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: #4285F4;
+    margin-left: 10px;
+    transition: width 0.2s ease;
+  }
+  
+  .read-article-link:hover .read-article-line {
+    width: 40px;
+    background-color: #0b5ed7;
+  }
+  
+  .blog-controls button {
+    background: transparent;
+    border: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .blog-controls button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blog-image-wrapper {
+      height: 300px;
+    }
+    .blog-content-card {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      max-width: 100%;
+      margin-top: -30px; /* Pull it slightly over the image */
+      margin-left: 15px;
+      width: calc(100% - 30px);
+    }
+  }

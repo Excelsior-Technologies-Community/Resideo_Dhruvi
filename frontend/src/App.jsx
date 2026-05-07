@@ -9,6 +9,9 @@ import Login from "./components/Login";
 import Services from "./components/Services";
 import Listings from "./components/Listing";
 import Agents from "./components/Agents";
+import Agent1 from "./components/Agent1";
+import Blog from "./components/Blog";
+
 function App() {
   return (
     <Router>
@@ -21,7 +24,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/listings" element={<Listings />} />
         <Route path="/agents" element={<Agents />} />
-
+<Route path="/melvin-blackwell" element={<Agent1 />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </Router>
