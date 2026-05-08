@@ -11,6 +11,7 @@ import Listings from "./components/Listing";
 import Agents from "./components/Agents";
 import Agent1 from "./components/Agent1";
 import Blog from "./components/Blog";
+import Demos from "./components/Demos";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/agents" element={<Agents />} />
 <Route path="/melvin-blackwell" element={<Agent1 />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/demos" element={<Demos />} />
       </Routes>
       <Footer />
     </Router>

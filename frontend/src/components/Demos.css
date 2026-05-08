@@ -1,0 +1,63 @@
+.demos-hero-section {
+    position: relative;
+    height: 500px;
+    background-image: url('../assets/house4.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demos-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.demos-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.demos-search-bar {
+    border-radius: 8px;
+}
+
+.demos-select:focus,
+.demos-input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.demos-carousel-container {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+    scroll-behavior: smooth;
+}
+
+.demos-carousel-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.demos-card-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+
+.demos-property-card .card-img-overlay {
+    z-index: 2;
+}
+
+.demos-property-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.demos-property-card:hover {
+    transform: translateY(-5px);
+}

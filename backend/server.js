@@ -14,6 +14,7 @@ const contactRoutes = require("./routes/contactRoutes");
 const propertyRoutes = require("./routes/propertyRoutes");
 const agentRoutes = require("./routes/agentRoutes");
 const articleRoutes = require("./routes/articleRoutes");
+const blogArticleRoutes = require("./routes/blogArticleRoutes");
 
 app.use("/api/neighborhoods", neighborhoodRoutes);
 app.use("/api/services", serviceRoutes);
@@ -23,6 +24,7 @@ app.use('/api', featureRoutes);
 app.use("/api/properties", propertyRoutes);
 app.use("/api/agents", agentRoutes);
 app.use("/api/articles", articleRoutes);
+app.use("/api", blogArticleRoutes);
 
 app.listen(5000, () => {
   console.log("Server running on http://localhost:5000");

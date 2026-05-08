@@ -12,3 +12,9 @@ http://localhost:5000/api/agents/properties  -- GET
 
 http://localhost:5000/api/articles -- GET
 
+http://localhost:5000/api/blog-articles -- GET
+
+http://localhost:5000/api/properties  -- GET
+
+
+

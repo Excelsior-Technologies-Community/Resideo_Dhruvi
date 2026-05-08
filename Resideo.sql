@@ -113,3 +113,24 @@ INSERT INTO articles (category, title, description, image, featured) VALUES
 ('LIVING ROOM', 'How Does A Designer Home Look Like', 'Have realistic expectations Most designers will tell you that, as much as we all love to watch home design shows, their prevalence has done them a bit of a disservice....', 'house1.jpeg', true),
 ('ARCHITECTURE', 'The Secrets of Modern Architecture', 'Learn about the principles that define modern architecture and how they influence the spaces we live and work in today...', 'house2.jpeg', false),
 ('INTERIOR DESIGN', 'Tips for a Minimalist Home', 'Minimalism is more than just a design trend. It is a lifestyle choice that can lead to a more peaceful and organized environment...', 'house3.jpeg', false);
+
+CREATE TABLE blog_articles (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    category VARCHAR(100),
+    title VARCHAR(255),
+    article_date VARCHAR(100),
+    image VARCHAR(255)
+);
+
+INSERT INTO blog_articles (category, title, article_date, image) VALUES
+('ARCHITECTURE', 'Private Contemporary Home Balancing Openness', 'July 7, 2020', 'house7.jpg'),
+
+('ARCHITECTURE', 'What to Expect When Working with an Interior Designer', 'July 7, 2020', 'house6.jpg'),
+
+('LIVING ROOM', 'How Does A Designer Home Look Like', 'July 7, 2020', 'house5.jpg'),
+
+('APARTMENTS', 'Luminous 3 Bedroom Apartment Flaunting Modern Style', 'July 7, 2020', 'house4.jpg'),
+
+('BEDROOM', 'Bedroom Interior Dark Theme', 'July 7, 2020', 'house3.jpg'),
+
+('KITCHEN', 'Modern Kitchen Interior Ideas', 'July 7, 2020', 'house2.jpg');
