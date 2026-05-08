@@ -35,6 +35,7 @@ body {
   margin-top: 10px;
   color: #bbb;
 }
+
 .user-icon {
   width: 40px;
   height: 40px;
@@ -159,7 +160,7 @@ body {
 
 .input-box select {
   height: 50px;
-  padding: 0 40px 0 15px; 
+  padding: 0 40px 0 15px;
   display: flex;
   align-items: center;
 }
@@ -181,7 +182,8 @@ body {
   font-size: 14px;
 }
 
-.next-btn, .prev-btn {
+.next-btn,
+.prev-btn {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
@@ -207,7 +209,8 @@ body {
   left: -20px;
 }
 
-.next-btn:hover, .prev-btn:hover {
+.next-btn:hover,
+.prev-btn:hover {
   background: #333 !important;
 }
 
@@ -215,6 +218,7 @@ body {
   .next-btn {
     right: 10px;
   }
+
   .prev-btn {
     left: 10px;
   }
@@ -223,11 +227,13 @@ body {
 .help-section {
   margin-top: 50px;
 }
+
 .help-img {
   width: 90%;
   height: 500px;
   object-fit: cover;
 }
+
 .help-info-box {
   position: absolute;
   bottom: 0;
@@ -235,15 +241,18 @@ body {
   width: 380px;
   z-index: 2;
 }
+
 .help-subtitle {
   font-size: 16px;
   line-height: 1.6;
 }
+
 .help-info-text {
   font-size: 14px;
   line-height: 1.6;
   color: #ccc;
 }
+
 .help-option {
   font-size: 20px;
   font-weight: 600;
@@ -252,9 +261,11 @@ body {
   display: flex;
   align-items: center;
 }
+
 .help-option.active {
   color: #000;
 }
+
 .help-option .line {
   margin-right: 15px;
   font-weight: normal;
@@ -299,6 +310,7 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+
 .slider-dots .dot.active {
   background-color: transparent;
   border: 1px solid #fff;
@@ -334,6 +346,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .social-icons i:hover {
   background-color: #fff;
   color: #000;
@@ -496,7 +509,7 @@ body {
   color: black;
   font-size: 22px;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .play-btn i {
@@ -524,9 +537,11 @@ body {
   .tech-hero {
     height: 400px;
   }
+
   .tech-hero h2 {
     font-size: 28px;
   }
+
   .number-stat {
     font-size: 48px;
   }
@@ -616,7 +631,7 @@ body {
   color: #fff;
   padding: 30px;
   width: 80%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .overlay-card p {
@@ -774,6 +789,7 @@ i {
 .agents-grid {
   margin-top: 120px;
 }
+
 .agent-card {
   position: relative;
   overflow: hidden;
@@ -793,13 +809,13 @@ i {
   left: 50%;
   transform: translateX(-50%);
   background: black;
-  padding: 4px 8px;   
+  padding: 4px 8px;
   border-radius: 20px;
   color: white;
-  font-size: 11px;    
+  font-size: 11px;
   opacity: 0;
   transition: 0.3s;
-  display: flex;      
+  display: flex;
   align-items: center;
 }
 
@@ -1068,162 +1084,162 @@ body {
   }
 }
 
-.interior-blog-main-wrapper{
-    background:#f5f5f5;
-    padding:60px 0;
+.interior-blog-main-wrapper {
+  background: #f5f5f5;
+  padding: 60px 0;
 }
 
-.interior-blog-card-box{
-    position:relative;
+.interior-blog-card-box {
+  position: relative;
 }
 
-.interior-blog-image-wrapper{
-    overflow:hidden;
+.interior-blog-image-wrapper {
+  overflow: hidden;
 }
 
-.interior-blog-main-image{
-    width:100%;
-    height:330px;
-    object-fit:cover;
+.interior-blog-main-image {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
 }
 
-.interior-blog-content-box{
-    background:#fff;
-    width:90%;
-    padding:25px;
-    margin-top:-55px;
-    position:relative;
-    z-index:10;
+.interior-blog-content-box {
+  background: #fff;
+  width: 90%;
+  padding: 25px;
+  margin-top: -55px;
+  position: relative;
+  z-index: 10;
 }
 
-.interior-blog-category-text{
-    font-size:12px;
-    color:#999;
-    text-transform:uppercase;
-    font-weight:600;
+.interior-blog-category-text {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.interior-blog-title-text{
-    font-size:22px;
-    line-height:32px;
-    font-weight:700;
-    margin-top:10px;
-    color:#1f2937;
+.interior-blog-title-text {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #1f2937;
 }
 
-.interior-blog-date-text{
-    margin-top:15px;
-    color:#777;
-    font-size:15px;
+.interior-blog-date-text {
+  margin-top: 15px;
+  color: #777;
+  font-size: 15px;
 }
 
-.interior-blog-sidebar-heading{
-    font-size:32px;
-    font-weight:700;
-    margin-bottom:25px;
-    color:#1f2937;
+.interior-blog-sidebar-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1f2937;
 }
 
 .interior-blog-search-box,
 .interior-blog-recent-articles-box,
 .interior-blog-categories-box,
-.interior-blog-tags-box{
-    margin-bottom:60px;
+.interior-blog-tags-box {
+  margin-bottom: 60px;
 }
 
-.interior-blog-search-input-wrapper{
-    position:relative;
+.interior-blog-search-input-wrapper {
+  position: relative;
 }
 
-.interior-blog-search-input{
-    height:55px;
-    border-radius:0;
-    border:1px solid #ddd;
+.interior-blog-search-input {
+  height: 55px;
+  border-radius: 0;
+  border: 1px solid #ddd;
 }
 
-.interior-blog-search-input:focus{
-    box-shadow:none;
-    border-color:#000;
+.interior-blog-search-input:focus {
+  box-shadow: none;
+  border-color: #000;
 }
 
-.interior-blog-search-icon{
-    position:absolute;
-    right:20px;
-    top:18px;
-    color:#000;
+.interior-blog-search-icon {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  color: #000;
 }
 
-.interior-blog-recent-single-item{
-    display:flex;
-    align-items:flex-start;
-    gap:15px;
-    margin-bottom:25px;
+.interior-blog-recent-single-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
-.interior-blog-recent-image{
-    width:60px;
-    height:60px;
-    object-fit:cover;
+.interior-blog-recent-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
 }
 
-.interior-blog-recent-title{
-    font-size:17px;
-    line-height:26px;
-    color:#1f2937;
-    margin:0;
+.interior-blog-recent-title {
+  font-size: 17px;
+  line-height: 26px;
+  color: #1f2937;
+  margin: 0;
 }
 
-.interior-blog-category-list{
-    padding:0;
-    margin:0;
-    list-style:none;
+.interior-blog-category-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.interior-blog-category-list li{
-    margin-bottom:18px;
-    font-size:18px;
-    color:#1f2937;
+.interior-blog-category-list li {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #1f2937;
 }
 
-.interior-blog-tags-wrapper{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
+.interior-blog-tags-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.interior-blog-tags-wrapper span{
-    border:1px solid #ddd;
-    padding:10px 18px;
-    font-size:13px;
-    border-radius:30px;
-    font-weight:600;
+.interior-blog-tags-wrapper span {
+  border: 1px solid #ddd;
+  padding: 10px 18px;
+  font-size: 13px;
+  border-radius: 30px;
+  font-weight: 600;
 }
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-    .interior-blog-title-text{
-        font-size:20px;
-        line-height:30px;
-    }
+  .interior-blog-title-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-    .interior-blog-sidebar-main{
-        margin-top:50px;
-    }
+  .interior-blog-sidebar-main {
+    margin-top: 50px;
+  }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
 
-    .interior-blog-content-box{
-        width:95%;
-        padding:20px;
-    }
+  .interior-blog-content-box {
+    width: 95%;
+    padding: 20px;
+  }
 
-    .interior-blog-title-text{
-        font-size:18px;
-        line-height:28px;
-    }
+  .interior-blog-title-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
 
-    .interior-blog-sidebar-heading{
-        font-size:26px;
-    }
+  .interior-blog-sidebar-heading {
+    font-size: 26px;
+  }
 }
