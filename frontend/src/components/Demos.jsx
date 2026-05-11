@@ -379,8 +379,8 @@ const Demos = () => {
 
                                 <div
                                     className={`membership-plan-card ${plan.active
-                                            ? "membership-active-card"
-                                            : ""
+                                        ? "membership-active-card"
+                                        : ""
                                         }`}
                                 >
 
