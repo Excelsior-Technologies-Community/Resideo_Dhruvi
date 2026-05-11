@@ -134,3 +134,43 @@ INSERT INTO blog_articles (category, title, article_date, image) VALUES
 ('BEDROOM', 'Bedroom Interior Dark Theme', 'July 7, 2020', 'house3.jpg'),
 
 ('KITCHEN', 'Modern Kitchen Interior Ideas', 'July 7, 2020', 'house2.jpg');
+
+CREATE TABLE why_choose_cards (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    description TEXT,
+    icon VARCHAR(255)
+);
+
+INSERT INTO why_choose_cards (title, description, icon) VALUES
+('Find your future home',
+'We help you find a new home by offering a smart real estate experience',
+'fa-house'),
+
+('Experienced agents',
+'Find an experienced agent who knows your market best',
+'fa-handshake'),
+
+('Buy or rent homes',
+'Millions of houses and apartments in your favourite cities',
+'fa-wallet'),
+
+('List your own property',
+'Sign up now and sell or rent your own properties',
+'fa-cloud');
+
+CREATE TABLE neighborhoods1 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    city VARCHAR(255),
+    image VARCHAR(255)
+);
+
+INSERT INTO neighborhoods1 (title, city, image) VALUES
+('Marina District', 'San Francisco', 'img1.png'),
+('Sea Cliff', 'San Francisco', 'img2.png'),
+('Noe Valley', 'San Francisco', 'img3.png'),
+('Sunset District', 'San Francisco', 'img4.png'),
+('Pacific Heights', 'San Francisco', 'house4.jpg'),
+('Mission District', 'San Francisco', 'house5.jpg');
+
