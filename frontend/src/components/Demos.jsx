@@ -88,7 +88,46 @@ const Demos = () => {
             .then(res => setAgents(res.data))
             .catch(err => console.log(err));
     }, []);
-    
+
+    const plansData = [
+        {
+            id: 1,
+            title: "PERSONAL",
+            listings: "10 Listings",
+            featured: "2 Featured Listings",
+            price: "Free",
+            duration: "/ 1 month",
+            icon: "fa-house",
+            active: false,
+            badge: "",
+        },
+
+        {
+            id: 2,
+            title: "PROFESSIONAL",
+            listings: "20 Listings",
+            featured: "5 Featured Listings",
+            price: "49.99",
+            duration: "/ 6 months",
+            icon: "fa-store",
+            active: true,
+            badge: "MOST POPULAR",
+        },
+
+        {
+            id: 3,
+            title: "BUSINESS",
+            listings: "30 Listings",
+            featured: "10 Featured Listings",
+            price: "99.99",
+            duration: "/ 1 year",
+            icon: "fa-city",
+            active: false,
+            badge: "",
+        },
+    ];
+
+
     return (
         <>
             <div className="demos-page">
@@ -234,51 +273,51 @@ const Demos = () => {
             </div>
 
             <div
-      className="smartsearch-main-banner"
-      style={{
-        backgroundImage: `url(${bannerImage})`,
-      }}
-    >
+                className="smartsearch-main-banner"
+                style={{
+                    backgroundImage: `url(${bannerImage})`,
+                }}
+            >
 
-      <div className="container h-100">
+                <div className="container h-100">
 
-        <div className="row h-100 align-items-center">
+                    <div className="row h-100 align-items-center">
 
-          <div className="col-lg-5 col-md-7 col-12">
+                        <div className="col-lg-5 col-md-7 col-12">
 
-            <div className="smartsearch-content-box">
+                            <div className="smartsearch-content-box">
 
-              <h1>
-                Search Smarter,
-                <br />
-                From Anywhere
-              </h1>
+                                <h1>
+                                    Search Smarter,
+                                    <br />
+                                    From Anywhere
+                                </h1>
 
-              <p>
-                Power your search with our Resideo
-                real estate platform, for timely listings
-                and a seamless experience.
-              </p>
+                                <p>
+                                    Power your search with our Resideo
+                                    real estate platform, for timely listings
+                                    and a seamless experience.
+                                </p>
 
-              <a href="/" className="smartsearch-btn-link">
+                                <a href="/" className="smartsearch-btn-link">
 
-                SEARCH NOW
+                                    SEARCH NOW
 
-                <span className="smartsearch-line"></span>
+                                    <span className="smartsearch-line"></span>
 
-              </a>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div className="agents-page">
+            <div className="agents-page">
 
                 <div className="container agents-grid">
                     <div className="row">
@@ -311,6 +350,92 @@ const Demos = () => {
                             </div>
                         ))}
                     </div>
+                </div>
+
+            </div>
+
+            <div className="membership-main-wrapper">
+
+                <div className="container">
+
+                    <div className="membership-heading-wrapper">
+
+                        <h1>Membership Plans</h1>
+
+                        <p>
+                            Choose the plan that suits you best.
+                        </p>
+
+                    </div>
+
+                    <div className="row justify-content-center">
+
+                        {plansData.map((plan) => (
+
+                            <div
+                                className="col-lg-4 col-md-6 col-12 mb-4"
+                                key={plan.id}
+                            >
+
+                                <div
+                                    className={`membership-plan-card ${plan.active
+                                            ? "membership-active-card"
+                                            : ""
+                                        }`}
+                                >
+
+                                    {plan.badge && (
+
+                                        <div className="membership-popular-badge">
+
+                                            {plan.badge}
+
+                                        </div>
+
+                                    )}
+
+                                    <div className="membership-icon-wrapper">
+
+                                        <i
+                                            className={`fa-solid ${plan.icon}`}
+                                        ></i>
+
+                                    </div>
+
+                                    <h3>{plan.title}</h3>
+
+                                    <div className="membership-listing-text">
+
+                                        <p>{plan.listings}</p>
+
+                                        <p>{plan.featured}</p>
+
+                                    </div>
+
+                                    <div className="membership-price-wrapper">
+
+                                        <span className="membership-price">
+
+                                            {plan.price}
+
+                                        </span>
+
+                                        <span className="membership-duration">
+
+                                            {plan.duration}
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        ))}
+
+                    </div>
+
                 </div>
 
             </div>

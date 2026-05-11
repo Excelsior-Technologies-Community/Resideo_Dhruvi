@@ -400,3 +400,156 @@
     font-size: 16px;
   }
 }
+
+.membership-main-wrapper {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+.membership-heading-wrapper {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.membership-heading-wrapper h1 {
+  font-size:35px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.membership-heading-wrapper p {
+  font-size: 15px;
+  color: #777;
+}
+
+.membership-plan-card {
+  background: transparent;
+  text-align: center;
+  padding: 70px 40px;
+  position: relative;
+  transition: 0.4s;
+  height: 100%;
+}
+
+.membership-active-card {
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.membership-plan-card:hover {
+  transform: translateY(-8px);
+}
+
+.membership-popular-badge {
+  display: inline-block;
+  background: #2d2d2d;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 30px;
+  margin-bottom: 45px;
+}
+
+.membership-icon-wrapper {
+  margin-bottom: 45px;
+}
+
+.membership-icon-wrapper i {
+  font-size: 75px;
+  color: #3a3a3a;
+}
+
+.membership-plan-card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 35px;
+}
+
+.membership-listing-text p {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.membership-price-wrapper {
+  margin-top: 55px;
+}
+
+.membership-price {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.membership-duration {
+  font-size: 20px;
+  color: #777;
+  margin-left: 8px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .membership-heading-wrapper h1 {
+    font-size: 46px;
+  }
+
+  .membership-plan-card {
+    padding: 55px 30px;
+  }
+
+  .membership-plan-card h3 {
+    font-size: 34px;
+  }
+
+  .membership-price {
+    font-size: 46px;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+
+  .membership-main-wrapper {
+    padding: 60px 0;
+  }
+
+  .membership-heading-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .membership-heading-wrapper h1 {
+    font-size: 34px;
+  }
+
+  .membership-heading-wrapper p {
+    font-size: 17px;
+  }
+
+  .membership-plan-card {
+    padding: 45px 25px;
+  }
+
+  .membership-icon-wrapper i {
+    font-size: 70px;
+  }
+
+  .membership-plan-card h3 {
+    font-size: 28px;
+  }
+
+  .membership-listing-text p {
+    font-size: 18px;
+  }
+
+  .membership-price {
+    font-size: 38px;
+  }
+
+  .membership-duration {
+    font-size: 16px;
+  }
+}
