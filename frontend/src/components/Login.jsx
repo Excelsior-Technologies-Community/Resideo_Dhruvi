@@ -27,7 +27,11 @@ const Login = () => {
         localStorage.setItem("token", data.token);
         localStorage.setItem("user", JSON.stringify(data.user));
         alert("Login successful!");
-        navigate("/");
+        if (data.user.role === "admin" || data.user.email === "admin@gmail.com") {
+          navigate("/admin");
+        } else {
+          navigate("/");
+        }
       } else {
         setError(data.message || "Login failed");
       }

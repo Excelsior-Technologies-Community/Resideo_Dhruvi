@@ -1243,3 +1243,179 @@ body {
     font-size: 26px;
   }
 }
+
+/* src/styles/Contact.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 18px 0;
+  background: #fff;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  margin-left: 25px;
+  font-weight: 600;
+  color: #222 !important;
+}
+
+.active-link {
+  border-bottom: 2px solid #000;
+}
+
+/* Header */
+
+.contact-header {
+  background: #f3f3f3;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.contact-header h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #222;
+}
+
+.contact-header p {
+  font-size: 20px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.contact-bg {
+  min-height: 900px;
+
+  background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2070&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding-bottom: 80px;
+}
+
+
+.office-card {
+  background: #fff;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.office-card h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.office-box {
+  margin-bottom: 30px;
+}
+
+.office-box h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.office-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.office-box i {
+  color: #111;
+}
+
+.email {
+  color: #888 !important;
+}
+
+
+@media (max-width: 992px) {
+
+  .contact-header h1 {
+    font-size: 48px;
+  }
+
+  .office-card {
+    padding: 40px;
+  }
+
+  .office-card h2 {
+    font-size: 40px;
+  }
+
+  .office-box h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact-header {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .contact-header h1 {
+    font-size: 38px;
+  }
+
+  .contact-header p {
+    font-size: 16px;
+  }
+
+  .contact-bg {
+    min-height: auto;
+    padding: 50px 20px;
+  }
+
+  .office-card {
+    padding: 30px 20px;
+  }
+
+  .office-card h2 {
+    font-size: 32px;
+  }
+
+  .office-box h3 {
+    font-size: 24px;
+  }
+
+  .office-box p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .contact-header h1 {
+    font-size: 32px;
+  }
+
+  .office-card {
+    padding: 25px 18px;
+  }
+}

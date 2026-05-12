@@ -12,6 +12,8 @@ import Agents from "./components/Agents";
 import Agent1 from "./components/Agent1";
 import Blog from "./components/Blog";
 import Demos from "./components/Demos";
+import Contact from "./components/Contact";
+import AdminPanel from "./components/AdminPanel";
 
 function App() {
   return (
@@ -25,9 +27,11 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/listings" element={<Listings />} />
         <Route path="/agents" element={<Agents />} />
-<Route path="/melvin-blackwell" element={<Agent1 />} />
+        <Route path="/melvin-blackwell" element={<Agent1 />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/demos" element={<Demos />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/admin" element={<AdminPanel />} />
       </Routes>
       <Footer />
     </Router>
